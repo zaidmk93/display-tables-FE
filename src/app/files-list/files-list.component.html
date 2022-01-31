@@ -1,0 +1,10 @@
+<h3>files list:</h3>
+
+<div *ngIf='fileNamesRes' class="file-list">
+  <div *ngFor="let file of fileNamesRes.filesArr"
+  (click)="selectFile(file)">
+    <app-item-from-the-list [itemName]='file' [itemSelected] = 'file === selectedFile'></app-item-from-the-list>
+  </div>
+</div>
+
+

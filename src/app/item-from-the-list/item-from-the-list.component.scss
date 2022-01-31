@@ -1,0 +1,14 @@
+.item-from-the-list {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  width: 100px;
+  height: 60px;
+  background-color: #ff0f0f80;
+  border-radius: 6px;
+}
+
+.selected-item {
+  background-color: #e6adad;
+}

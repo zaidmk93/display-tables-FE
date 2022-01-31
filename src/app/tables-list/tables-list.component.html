@@ -1,0 +1,9 @@
+<div *ngIf='fetchedTables'>
+  <h3>tables list:</h3>
+  <div class="table-list">
+    <div *ngFor="let table of fetchedTables.tables"
+    (click)="selectTable(table)">
+      <app-item-from-the-list [itemName]='table.title' [itemSelected]='table === selectedTable'></app-item-from-the-list>
+    </div>
+  </div>
+</div>
